@@ -1,0 +1,50 @@
+:root {
+  --color1: #F4EEFF;
+  --color2: #DCD6F7;
+  --color3: #A6B1E1;
+  --color4: #424874;
+}
+
+.Modal-logout {
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  display: flex;
+  padding: 1rem 0;
+  position: absolute;
+  border-radius: 1rem;
+  align-items: center;
+  flex-direction: column;
+  transition: all 150ms ease;
+  background-color: var(--color1);
+}
+
+.Modal-logout h1 {
+  margin-bottom: 1rem;
+}
+
+.Modal-logout > div {
+  gap: 1rem;
+  display: flex;
+}
+
+.Overlay-logout {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+@media (max-width: 300px) {
+  .Modal-logout > div {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 200px) {
+  .Modal-logout {
+    font-size: 7vmin;
+  }
+}
